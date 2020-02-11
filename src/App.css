@@ -1,38 +1,133 @@
-.App {
+body,
+html {
+  background: #f1f1f1;
+}
+#header {
+  position: fixed;
+  height: 60px;
+  background: #FFFFFF;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  z-index: 5;
+  box-shadow: 0px 1px 2px rgba(63, 63, 68, 0.15);
+}
+#header div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#header div p {
+  margin-top: 0;
+  align-self: center;
+}
+#login .content {
+  padding-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+#login .content .input {
+  width: 200px;
+  height: 38px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+#home .content {
+  padding-top: 100px;
+}
+#home .content .searchDiv {
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#home .content .searchDiv .search {
+  width: 200px;
+  height: 35px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#home .forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#home .forms .empty {
+  margin: 0;
+  font-size: 14px;
+}
+#home .forms form {
   display: flex;
   flex-direction: column;
+}
+#home .forms form .input,
+#home .forms form select {
+  width: 200px;
+  height: 38px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+#home .forms form .categories {
+  display: flex;
+  margin: 10px 0;
+}
+#home .forms form .categories .category {
+  border-radius: 4px;
+  padding: 0 8px;
+  background-color: #cbcbfc;
+  display: flex;
+  flex: 0 1 20%;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+#home .forms form .categories .category p {
+  margin: 0 10px 0 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#home .directoryList {
+  background: #ffffff;
+  width: 500px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 5px #CCCCCC1A;
+}
+#home .directoryList p {
+  margin: 5px 5px 5px 170px;
+  font-size: 14px;
+}
+#home .directoryList .delete {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+#home .directoryList .edit {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+#home .directoryList .category {
+  border-radius: 4px;
+  background: #cbcbfc;
+  padding: 3px 10px;
+  display: inline;
+  margin-right: 5px;
+}
+#home .directoryList .catDiv {
+  font-size: 14px;
+  margin: 5px 5px 5px 170px;
+}
+#home .directoryList img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

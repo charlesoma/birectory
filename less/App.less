@@ -1,0 +1,142 @@
+@mobile: ~ "only screen and (max-width: 800px)";
+@tablet: ~ "only screen and (min-width: 530px) and (max-width: 949px)";
+
+body, html{
+    background: #f1f1f1;
+}
+
+#header{
+    position: fixed;
+    height: 60px;
+    background: #FFFFFF;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    z-index: 5;
+    box-shadow: 0px 1px 2px rgba(63, 63, 68, 0.15);
+    div{
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        height: 100%;
+        p{
+            margin-top: 0;
+            align-self: center;
+        }
+    }
+}
+
+#login{
+    .content{
+        padding-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        .input{
+            width: 200px;
+            height: 38px;
+            margin-bottom: 10px;
+            background: #ffffff;
+            box-sizing: border-box;
+        }
+    }
+}
+
+#home{
+    .content{
+        padding-top: 100px;
+        .searchDiv{
+            width: 100%;
+            text-align: center;
+            .search{
+                width: 200px;
+                height: 35px;
+                margin-bottom: 15px;
+                background: #ffffff;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .forms{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .empty{
+            margin: 0;
+            font-size: 14px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            .input, select{
+                width: 200px;
+                height: 38px;
+                margin-bottom: 10px;
+                background: #ffffff;
+                box-sizing: border-box;
+            }
+            .categories{
+                display: flex;
+                margin: 10px 0;
+                .category{
+                    border-radius: 4px;
+                    padding: 0 8px;
+                    background-color: rgb(203, 203, 252);
+                    display: flex;
+                    flex: 0 1 20%;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-right: 5px;
+                    p{
+                        margin: 0 10px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    .directoryList{
+        background: #ffffff;
+        width: 500px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 5px 5px 5px #CCCCCC1A;
+        p{
+            margin: 5px 5px 5px 170px;
+            font-size: 14px;
+        }
+        .delete{
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+        }
+        .edit{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .category{
+            border-radius: 4px;
+            background: rgb(203, 203, 252);
+            padding: 3px 10px;
+            display: inline;
+            margin-right: 5px;
+        }
+        .catDiv{
+            font-size: 14px;
+            margin: 5px 5px 5px 170px;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
